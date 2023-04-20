@@ -1,0 +1,7 @@
+https://docs.google.com/spreadsheets/d/1r-86TPWZ2aDclAprYytrEL7XFY8x_ha9n7Ke-AlC7RQ/edit?usp=sharing
+
+api key
+AIzaSyBflNnPPWkh82yVIR6yDRIxMe_6c5LwqLM
+
+api
+https://sheets.googleapis.com/v4/spreadsheets/1r-86TPWZ2aDclAprYytrEL7XFY8x_ha9n7Ke-AlC7RQ/values/{SHEETS_RANGE}?key={API_KEY}
