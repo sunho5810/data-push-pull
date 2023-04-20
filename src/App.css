@@ -1,0 +1,5 @@
+.tbl{width: 100%; border: 1px solid #000; box-sizing: border-box;}
+.tbl th{background: #eee; font-weight: bold; border-right: 1px solid #000; box-sizing: border-box;}
+.tbl tr{border-bottom: 1px solid #000; box-sizing: border-box;}
+.tbl td{padding: 10px; text-align: center; border-right: 1px solid #000; box-sizing: border-box;}
+.tbl th:last-child, .tbl tbody tr:last-child, .tbl td:last-child{border: none;}
