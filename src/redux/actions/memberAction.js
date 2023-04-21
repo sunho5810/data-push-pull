@@ -16,14 +16,16 @@ function getData(){
             const sheetData = localStorage.getItem('sheetData'); // 저장된 데이터를 가져옴
             const parsedData = JSON.parse(sheetData); // 가져온 데이터를 객체로 변환
 
-            const initData = parsedData.values.map(item => [{
-                backNum: item[0],
-                name: item[2],
-                tier: item[1],
-                games: item[10],
-                goals: item[11],
-                assists: item[12]
-            }]);
+            const initData = parsedData.values.map(item => {
+                return {
+                    backNum: item[0],
+                    name: item[2],
+                    tier: item[1],
+                    games: item[10],
+                    goals: item[11],
+                    assists: item[12]
+                }
+            });
 
             dispatch({type: "GET_DATA_SUCCESS", payload: {data: initData}});
 

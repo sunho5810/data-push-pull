@@ -1,6 +1,6 @@
 let initState = {
     membersList: {},
-    loading: false
+    loading: true
 }
 
 function memberReducer(state = initState, action){

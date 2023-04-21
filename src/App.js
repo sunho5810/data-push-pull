@@ -8,15 +8,12 @@ import { memberAction } from './redux/actions/memberAction';
 function App() {
 
   const {membersList, loading} = useSelector((state) => state.members);
-  console.log("membersList?", membersList);
 
   const dispatch = useDispatch();
   
   useEffect(()=>{
-    console.log("check");
     dispatch(memberAction.getData());
   }, [])
-
 
   if(loading){
     return (
@@ -50,11 +47,11 @@ function App() {
           </tr>
         </thead>
         <tbody>
-          {/* {
+          {
             membersList.map((item, index) => (
-              <MembersCard item={item} index={index} />
-            ))
-          } */}
+              <MembersCard item={item} key={index} index={index} />
+              ))
+          }
         </tbody>
       </table>
     );
